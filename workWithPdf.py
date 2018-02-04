@@ -8,11 +8,11 @@ import io, os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 
-os.chdir('D:\\pythonTemp')      #открытие текущей папки
+os.chdir('D:\\pythonTemp')      #opening cwd
 
 
 
-pdfFileObj = open("1936_exp.pdf", "rb")               # открытие pdf
+pdfFileObj = open("1936_exp.pdf", "rb")               # opening pdf
 pdfReader = PdfFileReader(pdfFileObj)                   # creating pdf reader object
 pdfWriter = PdfFileWriter()
 allNumPages = str(pdfReader.numPages)
